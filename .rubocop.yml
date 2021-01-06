@@ -8,6 +8,12 @@ AllCops:
     - 'bin/*'
     - 'db/**/*'
 
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
 Layout/SpaceBeforeBrackets:
   Enabled: true
 
