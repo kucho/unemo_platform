@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(version: 2021_01_06_224427) do
 
   create_table "expenses", force: :cascade do |t|
     t.string "description"
-    t.decimal "amount", null: false
+    t.decimal "amount", precision: 8, scale: 2, null: false
     t.bigint "payee_id", null: false
     t.bigint "board_id", null: false
     t.bigint "category_id", null: false
