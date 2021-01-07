@@ -9,7 +9,7 @@ class CreateExpenses < ActiveRecord::Migration[6.1]
       t.references :currency, null: false, foreign_key: true
       t.datetime :date, null: false
       t.boolean :pending, default: true
-      t.decimal :exchange_rate, precision: 8, scale: 2, default: 1.1, null: false
+      t.decimal :exchange_rate, precision: 8, scale: 2, default: 1.0, null: false
 
       t.timestamps
     end

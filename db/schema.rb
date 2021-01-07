@@ -64,7 +64,7 @@ ActiveRecord::Schema.define(version: 2021_01_06_224427) do
     t.bigint "currency_id", null: false
     t.datetime "date", null: false
     t.boolean "pending", default: true
-    t.decimal "exchange_rate", precision: 8, scale: 2, default: "1.1", null: false
+    t.decimal "exchange_rate", precision: 8, scale: 2, default: "1.0", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["board_id"], name: "index_expenses_on_board_id"
