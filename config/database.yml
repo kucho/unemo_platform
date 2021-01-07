@@ -2,20 +2,20 @@ default: &default
   adapter: postgresql
   encoding: utf8
   pool: <%= ENV.fetch('RAILS_MAX_THREADS') { 10 } %>
-  host: <%= ENV.fetch('YONEMO_DATABASE_HOST') { '127.0.0.1' } %>
-  username: <%= ENV.fetch('YONEMO_DATABASE_USER') %>
-  password: <%= ENV.fetch('YONEMO_DATABASE_PASSWORD') %>
+  host: <%= ENV.fetch('UNEMO_DATABASE_HOST') { '127.0.0.1' } %>
+  username: <%= ENV.fetch('UNEMO_DATABASE_USER') %>
+  password: <%= ENV.fetch('UNEMO_DATABASE_PASSWORD') %>
   socket: /tmp/mysql.sock
 
 development:
   <<: *default
-  database: yonemo_platform_development
+  database: unemo_platform_development
 
 test:
   <<: *default
-  database: yonemo_platform_test
+  database: unemo_platform_test
 
 production:
   <<: *default
-  database: yonemo_platform_production
+  database: unemo_platform_production
 

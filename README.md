@@ -1,4 +1,4 @@
-# Yonemo
+# Unemo
 
-Yonemo is a familiar budgeting software with focus on concurrent usage.
+Unemo is a familiar budgeting software with focus on concurrent usage.
 
